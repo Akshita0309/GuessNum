@@ -1,0 +1,1 @@
+GuessNum is a mini project - a number guessing game which allows the users to guess a number within the limited number of attempts. This game can be continued to multiple rounds accoring to the user's chice and after each rounds scores are maintained on the basis of number of attempts.
