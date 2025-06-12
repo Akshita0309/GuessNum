@@ -14,17 +14,17 @@ public class NumberGuessingGame {
         int count=0;
         
         
-        Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in); // to be able to take user input
         
-        int randomNum= ran.nextInt(100)+1;
-        System.out.println("Random numer is :"+randomNum);
+        int randomNum= ran.nextInt(100)+1; //random number between 0-100
+        //System.out.println("Random numer is :"+randomNum); This line of code as a tester is to know the actual number
         
         
         while(i>0){
-            System.out.println("You have "+i+" attempts left");
+            System.out.println("You have "+i+" attempts left"); // shows number of attempts
     
             System.out.println("Guess the number (1-100):");
-            count++;
+            count++;           
             int points=0;
         
             int guess= sc.nextInt();
@@ -46,13 +46,13 @@ public class NumberGuessingGame {
                     points= 20;
                 }
                 
-                score+=points;
-                System.out.println("Your score is: "+score);
+                score+=points;     
+                System.out.println("Your score is: "+score);   
                 
                 System.out.println("DO YOU WANY ANOTHER ROUND?? PRESS '1' FOR YES AND '0' FOR NO--");
                 int a= sc.nextInt();
                 if(a==1){
-                    Guessnum();
+                    Guessnum(); // game continues
                 }
                 else{
                     System.out.println("SCORE :"+score);
